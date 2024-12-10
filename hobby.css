@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Poppins:wght@100;200;300;400&family=REM:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+  }
+
+  
+  /*-----------nav-----------*/
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img {
+    width: 100%;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
+  
+  nav .left a {
+    width: 18%;
+    margin: 20px;
+    transition: 0.4s ease;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+    width: 50%;
+  }
+  nav .left a img{
+    border-radius: 50%;
+    width:100px;
+    margin: 0 20px;
+    transition:0.3s ease-in-out;
+}
+  
+  nav .right .link {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0 20px 0 20px;
+    font-size: 24px;
+    transition: 0.4s ease;
+  }
+  
+  nav .right .link:hover {
+    color: rgb(155, 155, 155);
+  }
+  
+  @media (max-width: 1280px) {
+    nav .left a {
+      width: 25%;
+    }
+  
+    nav .right .link {
+      font-size: 18px;
+    }
+    nav .right .link:hover {
+      color: rgb(155, 155, 155);
+    }
+  }
+  .imgcollage {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  .col-lg-6{
+    display:grid;
+    /* declares how many columns there will automaticaly be and how big they will be +rows and how big of a gap between them*/
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px 250px;
+    grid-gap: 15px;}
